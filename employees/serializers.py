@@ -13,7 +13,4 @@ class EmployeeSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Name cannot be empty.")
         return value
 
-    # def validate_email(self, value):
-    #     if Employee.objects.filter(email=value).exists():
-    #         raise serializers.ValidationError("Employee with this email already exists.")
-    #     return value
+   
