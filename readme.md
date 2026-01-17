@@ -36,7 +36,7 @@ The API allows authenticated users to **create, read, update, and delete employe
 
 ### 1. Clone the Repository
 
-git clone <your-repo-url>
+git clone <https://github.com/Anujdwi/Habot_employees_management.git>
 cd employee_mgmt
 
 ---
@@ -58,8 +58,6 @@ source venv/bin/activate
 ### 3. Install Dependencies
 
 pip install -r requirements.txt
-
-pip freeze > requirements.txt
 
 ---
 
@@ -237,27 +235,10 @@ python manage.py test
 * Wrote unit tests to validate business logic and API stability
 
 ---
-
-## Presentation Flow (Interview Demo)
-
-1. Obtain JWT token
-2. Add token to Postman authorization header
-3. Create an employee
-4. Show duplicate email validation error
-5. List employees with pagination
-6. Filter employees by department or role
-7. Retrieve employee by ID (success + 404 case)
-8. Update employee details
-9. Delete employee and verify `204 No Content`
+`204 No Content`
 
 ---
 
 ## Conclusion
 
 This project demonstrates a **clean, secure, and REST-compliant backend API**, following industry best practices and meeting all requirements specified in the HabotConnect hiring assignment.
-
-
-{
-    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2ODcyMzY4MSwiaWF0IjoxNzY4NjM3MjgxLCJqdGkiOiJiODExYWYzOGI0Njc0MjkyYmQ5ZDYzMzFkZDFmYWZlMyIsInVzZXJfaWQiOiIxIn0.kLebof7Xvs8PDarvTnpr4h_fSC6JO2NUrf1sRkba9ak",
-    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NjQwODgxLCJpYXQiOjE3Njg2MzcyODEsImp0aSI6IjIzNDNiNmI4MWFhYzQ3MGM5MmE2MmJhYTIzMWQyMTQ5IiwidXNlcl9pZCI6IjEifQ.0I1Mdo-BIS89bCb9OlOMMos_c_PLWqbdRgc14ZqFlhg"
-}
